@@ -9,11 +9,11 @@ import math
 
 b = Bridge('IPADDY')
 
-class PhilipsCog(commands.Cog):
+class HueCog(commands.Cog):
 
     def __init__(self, bot):
         self.bot = bot
-        print('Philips Cog Loaded.')
+        print('Hue Cog Loaded.')
 
     @commands.command(name='hueinfo')
     async def get_P1(self, ctx):
@@ -89,7 +89,7 @@ class PhilipsCog(commands.Cog):
              await ctx.send('Hue Command Failed.')
 
 def setup(bot):
-    bot.add_cog(PhilipsCog(bot))
+    bot.add_cog(HueCog(bot))
 
 # Hue Colours.
 # ------------------
