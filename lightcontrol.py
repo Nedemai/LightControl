@@ -11,7 +11,8 @@ def get_prefix(bot, message):
     return commands.when_mentioned_or(*prefixes)(bot, message)
 
 initial_extensions = ['cogs.hue',
-                      'cogs.wiz']
+                      'cogs.wiz',
+                      'cogs.tuya']
 
 with open ("TOKEN", "r") as tokenFile:
     token = tokenFile.readline()
